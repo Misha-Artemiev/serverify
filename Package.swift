@@ -11,11 +11,16 @@ let package = Package(
             name: "Serverify",
             targets: ["Serverify"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/misha-artemiev/networkify.git", branch: "release")
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "Serverify"),
+            name: "Serverify", dependencies: [
+                .product(name: "Networkify", package: "Networkify"),
+            ]),
         .testTarget(
             name: "ServerifyTests",
             dependencies: ["Serverify"]
