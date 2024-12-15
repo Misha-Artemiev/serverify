@@ -1,13 +1,13 @@
 {
-  "originHash" : "47991b6e64ed24f901a8c4df389820a0fa9a0d700a77ca5ac7718b19dd078a03",
+  "originHash" : "ffc970c30358c3ccd75618c39e3009cd75f1b1e92e1e109ba753cfa8f346e40e",
   "pins" : [
     {
       "identity" : "networkify",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/misha-artemiev/networkify.git",
       "state" : {
-        "branch" : "release",
-        "revision" : "6d2936256a994b231d10f0a642fdfe5db959d4a0"
+        "branch" : "develop",
+        "revision" : "d5f280757ef2331c3a6018764a55a840847c269c"
       }
     },
     {
