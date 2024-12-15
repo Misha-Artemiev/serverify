@@ -12,7 +12,7 @@ let package = Package(
             targets: ["Serverify"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/misha-artemiev/networkify.git", branch: "release"),
+        .package(url: "https://github.com/misha-artemiev/networkify.git", branch: "develop"),
         .package(url: "https://github.com/apple/swift-nio.git", from: "2.0.0"),
     ],
     targets: [
