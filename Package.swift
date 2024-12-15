@@ -12,7 +12,8 @@ let package = Package(
             targets: ["Serverify"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/misha-artemiev/networkify.git", branch: "release")
+        .package(url: "https://github.com/misha-artemiev/networkify.git", branch: "release"),
+        .package(url: "https://github.com/apple/swift-nio.git", from: "2.0.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -20,6 +21,7 @@ let package = Package(
         .target(
             name: "Serverify", dependencies: [
                 .product(name: "Networkify", package: "Networkify"),
+                .product(name: "NIOCore", package: "swift-nio"),
             ]),
         .testTarget(
             name: "ServerifyTests",
